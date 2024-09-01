@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#background {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  z-index: -10;
+  background-color: #212121;
+}
+#background img {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  min-width: 50%;
+  min-height: 50%;
+  filter: blur(25px);
+  -webkit-filter: blur(35px);
+}
+
+#card {
+  width: min(97vw, 400px);
+  height: 460px;
+  margin: 0 auto;
+  border-radius: 10px;
+  background-color: #eae9e2;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+}
+#card > * {
+  width: min(95vw, 400px);
+}
+#card:hover {
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+  transform: scale(1.01);
+}
+#reciter-head-container {
+  position: relative;
+  top: -30px;
+  margin: 0 auto;
+  width: 280px;
+  height: 280px;
+  border-radius: 12px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+  animation: float 4s ease-in-out infinite;
+}
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(2, 135, 25, 0.4);
+    transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 20px 15px 0px rgba(2, 135, 25, 0.2);
+    transform: translatey(-8px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(2, 135, 25, 0.4);
+    transform: translatey(0px);
+  }
+}
+#reciter-head {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  border-radius: 10px;
+}
+
+h1,
+h2,
+#controls,
+span {
+  text-align: center;
+  font-family: "Space Grotesk";
+}
+
+h1 {
+  margin: -10px 0 0;
+  font-size: 1.8rem;
+}
+h2 {
+  margin: 5px 0 0;
+  font-size: 1rem;
+}
+
+#progress-bar {
+  background-color: #fff;
+  margin: 20px auto 35px;
+  height: 7px;
+  width: 80%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#progress {
+  background-color: #10810e;
+  height: 100%;
+  width: 0%;
+  border-radius: 10px;
+  transition: width 0.1s linear;
+}
+#surah-duration {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: 3px;
+}
+
+#controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: -10px auto 0;
+  width: 90%;
+}
+
+span {
+  font-size: 0.75rem;
+}
+i {
+  cursor: pointer;
+  transition: 0.3s;
+}
+i.bx-rewind,
+i.bx-fast-forward {
+  font-size: 3rem;
+  margin: 0 1px;
+}
+i.bx-shuffle,
+i.bx-repeat {
+  font-size: 1.7rem;
+}
+i:hover {
+  transform: scale(1.125);
+}
+i.bx-shuffle {
+  display: none;
+}
