@@ -31,7 +31,7 @@ const surahs = [
   },
   {
     path: "./indexMaterial/DuaBusiness.mp3",
-    title: "Dua For Business Success",
+    title: "Dua For Business",
     reciterName: "The Holy Quran",
     headPhoto: "./indexMaterial/QuranDuaCover.jpg",
   },
@@ -43,7 +43,7 @@ const surahs = [
   },
   {
     path: "./indexMaterial/DuaExamSuccess.mp3",
-    title: "Dua For Exam Success",
+    title: "Dua For Exams",
     reciterName: "The Holy Quran",
     headPhoto: "./indexMaterial/QuranDuaCover2.jpg",
   },
@@ -67,7 +67,7 @@ const surahs = [
   },
   {
     path: "./indexMaterial/DuaProtection.mp3",
-    title: "Dua For Total Protection",
+    title: "Dua For Protection",
     reciterName: "The Holy Quran",
     headPhoto: "./indexMaterial/QuranDuaCover2.jpg",
   },
