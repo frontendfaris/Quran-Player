@@ -35,14 +35,14 @@ body {
   margin: 0 auto;
   border-radius: 10px;
   background-color: #eae9e2;
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 15px 25px rgba(2, 135, 25, 0.25);
   transition: 0.3s;
 }
 #card > * {
   width: min(95vw, 400px);
 }
 #card:hover {
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 15px 25px rgba(2, 135, 25, 0.5);
   transform: scale(1.01);
 }
 #reciter-head-container {

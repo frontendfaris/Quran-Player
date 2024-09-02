@@ -181,12 +181,20 @@ const clickOnProgressBar = (point) => {
   quran.currentTime = (clickX / width) * quran.duration;
 };
 
-quran.addEventListener("ended", () => changeSurah(1));
-nextBtn.addEventListener("click", () => changeSurah(1));
+//buttons in order from left to right
+loopBtn.addEventListener("click", loopCurrent);
 previousBtn.addEventListener("click", () => changeSurah(-1));
 playBtn.addEventListener("click", togglePlay);
-loopBtn.addEventListener("click", loopCurrent);
+document.addEventListener("keydown", (key) => {
+  if (key.code === "Space") {
+    togglePlay();
+  }
+});
+nextBtn.addEventListener("click", () => changeSurah(1));
+quran.addEventListener("ended", () => changeSurah(1));
 /* shuffleBtn.addEventListener("click", shuffleCurrent);*/
+
+//progress bar
 progressBar.addEventListener("click", clickOnProgressBar);
 quran.addEventListener("timeupdate", progressBarTimeline);
 
