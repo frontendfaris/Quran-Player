@@ -111,11 +111,13 @@ const changeSurah = (fwOrBw) => {
 const playQuran = () => {
   isPlaying = true;
   playBtn.classList.replace("bx-play", "bx-pause");
+  playBtn.style.color = "black";
   quran.play();
 };
 const pauseQuran = () => {
   isPlaying = false;
   playBtn.classList.replace("bx-pause", "bx-play");
+  playBtn.style.color = "black"; //might think about changing it
   quran.pause();
 };
 const loopCurrent = () => {

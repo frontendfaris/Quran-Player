@@ -33,40 +33,40 @@ body {
   width: min(97vw, 400px);
   height: 460px;
   margin: 0 auto;
-  border-radius: 10px;
+  border-radius: 7px;
   background-color: #eae9e2;
-  box-shadow: 0 15px 25px rgba(2, 135, 25, 0.25);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.25);
   transition: 0.3s;
 }
 #card > * {
   width: min(95vw, 400px);
 }
 #card:hover {
-  box-shadow: 0 15px 25px rgba(2, 135, 25, 0.5);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
   transform: scale(1.01);
 }
 #reciter-head-container {
   position: relative;
-  top: -30px;
+  top: -35px;
   margin: 0 auto;
   width: 280px;
   height: 280px;
-  border-radius: 12px;
+  border-radius: 5px;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
   transition: 0.3s;
   animation: float 4s ease-in-out infinite;
 }
 @keyframes float {
   0% {
-    box-shadow: 0 5px 15px 0px rgba(2, 135, 25, 0.4);
+    box-shadow: 0 5px 14px -2px rgba(2, 76, 19, 0.4);
     transform: translatey(0px);
   }
   50% {
-    box-shadow: 0 20px 15px 0px rgba(2, 135, 25, 0.2);
-    transform: translatey(-8px);
+    box-shadow: 0 18px 14px -2px rgba(2, 76, 19, 0.2);
+    transform: translatey(-7px);
   }
   100% {
-    box-shadow: 0 5px 15px 0px rgba(2, 135, 25, 0.4);
+    box-shadow: 0 5px 14px -2px rgba(2, 76, 19, 0.4);
     transform: translatey(0px);
   }
 }
@@ -75,7 +75,7 @@ body {
   width: 100%;
   height: 100%;
   opacity: 1;
-  border-radius: 10px;
+  border-radius: 6px;
 }
 
 h1,
@@ -83,28 +83,29 @@ h2,
 #controls,
 span {
   text-align: center;
-  font-family: "Space Grotesk";
+  font-family: "Space Grotesk", "Noto Music", sans-serif;
+  font-weight: 480;
 }
 
 h1 {
-  margin: -10px 0 0;
+  margin: -15px 0 0;
   font-size: 1.7rem;
 }
 h2 {
-  margin: 5px 0 0;
+  margin: 1px 0 0;
   font-size: 1rem;
 }
 
 #progress-bar {
   background-color: #fff;
-  margin: 20px auto 35px;
+  margin: 30px auto 25px;
   height: 7px;
   width: 80%;
   border-radius: 5px;
   cursor: pointer;
 }
 #progress {
-  background-color: #10810e;
+  background-color: #129910;
   height: 100%;
   width: 0%;
   border-radius: 10px;
@@ -134,12 +135,12 @@ i {
 }
 i.bx-rewind,
 i.bx-fast-forward {
-  font-size: 3rem;
+  font-size: 2.8rem;
   margin: 0 1px;
 }
 i.bx-shuffle,
 i.bx-repeat {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
 }
 i:hover {
   transform: scale(1.125);
