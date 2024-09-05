@@ -111,24 +111,24 @@ const changeSurah = (fwOrBw) => {
 const playQuran = () => {
   isPlaying = true;
   playBtn.classList.replace("bx-play", "bx-pause");
-  playBtn.style.color = "black";
+  playBtn.style.color = "#ffffff";
   quran.play();
 };
 const pauseQuran = () => {
   isPlaying = false;
   playBtn.classList.replace("bx-pause", "bx-play");
-  playBtn.style.color = "black"; //might think about changing it
+  playBtn.style.color = "#1DB954"; //might think about changing it
   quran.pause();
 };
 const loopCurrent = () => {
   loopBtn.classList.toggle("color");
   if (loopBtn.classList.contains("color")) {
     quran.loop = true;
-    loopBtn.style.color = "#10810E";
+    loopBtn.style.color = "#1DB954";
     loadQuran();
   } else {
     quran.loop = false;
-    loopBtn.style.color = "black";
+    loopBtn.style.color = "#b3b3b3";
     loadQuran();
   }
 };
