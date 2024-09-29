@@ -25,8 +25,8 @@ body {
   margin: auto;
   min-width: 50%;
   min-height: 50%;
-  filter: blur(25px);
-  -webkit-filter: blur(35px);
+  filter: blur(30px);
+  -webkit-filter: blur(40px);
 }
 
 #card {
@@ -83,7 +83,7 @@ h2,
 #controls,
 span {
   text-align: center;
-  font-family: "Space Grotesk", "Noto Music", sans-serif;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 480;
 }
 
@@ -129,7 +129,7 @@ h2 {
 }
 
 span {
-  font-size: 0.75rem;
+  font-size: 0.8rem;
   color: #b3b3b3;
 }
 i {
