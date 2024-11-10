@@ -36,14 +36,14 @@ body {
   border-radius: 7px;
   background-color: #191414;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.25);
-  transition: 0.3s;
+  transition: ease-out 0.3s;
 }
 #card > * {
   width: min(95vw, 400px);
 }
 #card:hover {
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
-  transform: scale(1.01);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.4);
+  transform: scale(1.005);
 }
 #reciter-head-container {
   position: relative;
@@ -54,7 +54,6 @@ body {
   border-radius: 5px;
   box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
   transition: 0.3s;
-  animation: float 4s ease-in-out infinite;
 }
 @keyframes float {
   0% {
@@ -134,7 +133,7 @@ span {
 }
 i {
   cursor: pointer;
-  transition: 0.3s;
+  transition: ease-out 0.2s;
 }
 i.bx-play {
   color: #ffffff;
@@ -149,9 +148,6 @@ i.bx-shuffle,
 i.bx-repeat {
   font-size: 1.5rem;
   color: #b3b3b3;
-}
-i:hover {
-  transform: scale(1.125);
 }
 i.bx-shuffle {
   display: none;
